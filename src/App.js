@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header";
+import Footer from "./components/footer";
+import {Routes, Route} from 'react-router-dom'
+import Home from "./page/home";
+import Marketplace from "./page/marketplace";
+import Rankings from "./page/rankings";
+import Connect from "./page/connect";
+import Sign from "./page/sign";
+import Error from "./page/error/error";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Header/>
+            <Routes>
+                <Route path={"/"} element={<Home/>}/>
+                <Route path={"/marketplace"} element={<Marketplace/>}/>
+                <Route path={"/rankings"} element={<Rankings/>}/>
+                <Route path={"/connect"} element={<Connect/>}/>
+                <Route path={"/sign-up"} element={<Sign/>}/>
+                <Route path={"*"} element={<Error/>}/>
+            </Routes>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;

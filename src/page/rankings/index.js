@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Rankings = () => {
+const Index = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Rankings = () => {
     );
 };
 
-export default Rankings;
+export default Index;

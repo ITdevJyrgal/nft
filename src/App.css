@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+#header {
+    background: #2B2B2B;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-link a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 0 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-link button {
+    width: 152px;
+    height: 60px;
+    background: #A259FF;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-link button span {
+    position: relative;
+    top: 5px;
+    font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home-hero {
+    padding-top: 100px;
+}
+
+.home-hero-group h1 {
+    font-weight: 600;
+    font-size: 67px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.home-hero-group p {
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.home-hero-group button {
+    width: 224px;
+    height: 60px;
+    background: #A259FF;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 2px solid #A259FF;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.home-hero-group button:hover {
+    transform: scale(1.1);
+    background: transparent;
+    color: #A259FF;
+    backdrop-filter: blur(5px);
 }
